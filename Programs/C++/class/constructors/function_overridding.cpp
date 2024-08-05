@@ -1,0 +1,24 @@
+#include<iostream>
+int main()
+{
+    class Parent
+    {
+    public :
+    void display()
+    {
+        std::cout<<"I am under parent class\n";
+    }
+    };
+    
+    class Child:public Parent
+    {
+    public :
+    void display()
+    {
+        std::cout<<"I am under child class\n";
+    }
+    };
+
+    Child C;
+    C.display();
+}

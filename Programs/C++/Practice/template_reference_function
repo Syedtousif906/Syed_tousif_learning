@@ -1,0 +1,29 @@
+#include <iostream>
+template<class T>
+T max(T &a,T &b)
+{
+    std::cout<<"address of a in template = "<< &a<<"\n";
+    std::cout<<"address of b in template = "<< &b<<"\n";
+    if(a>b)
+    return a;
+    else
+    return b;
+}
+
+int main()
+{
+    int a,b;
+    float c,d;
+    a=3;
+    b=5;
+    c=3.2;
+    d=5.7;
+    int x = max(a,b);
+    std::cout<< x<<"\n";
+    float y = max(c,d);
+    std::cout<<"address of a = "<< &a<<"\n";
+    std::cout<<"address of b = "<< &b<<"\n";
+    std::cout<<"address of c = "<< &c<<"\n";
+    std::cout<<"address of d = "<< &d<<"\n";
+
+}
